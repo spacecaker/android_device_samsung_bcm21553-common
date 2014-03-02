@@ -91,7 +91,8 @@ PRODUCT_COPY_FILES += \
     device/samsung/bcm21553-common/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # New SamsungRIL
-PRODUCT_PROPERTY_OVERRIDES += \    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=SamsungRIL \
     mobiledata.interfaces=pdp0,eth0,gprs,ppp0
 
 # Performance & graphics properties
